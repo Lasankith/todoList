@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-image: url("../images/3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Light blue gradient */
+  width: 70%;
+  margin: 20px auto 20px; /* Added margin for space above and below navbar */
+}
+.navbar-brand, .nav > li > a {
+  color: black !important; /* Set font color to black */
+}
+.navbar-brand {
+  margin-right: 200px; /* Add space after the brand text */
+}
+.nav > li > a:hover, .nav > li.active > a {
+  background-color: white !important; /* Highlight active tab and hover effect in white */
+  color: black !important; /* Ensure text color stays black on active and hover */
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+}
+ 
+    .btn-add-task {
+      color: green;
+    }
+    .btn-add-task .glyphicon {
+      color: green;
+    }
+
+

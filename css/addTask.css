@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+    .task-modal {
+      background-color: #e7f2f7; /* Light blue background */
+    }
+    .toggle {
+      position: relative;
+      display: inline-block;
+      width: 60px; /* Increased width for a larger toggle */
+      height: 30px; /* Increased height for a larger toggle */
+      margin-right: 10px;
+    }
+    .toggle input[type="checkbox"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .toggle .handle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 30px; /* Adjust border-radius for a rounder appearance */
+      transition: background-color 0.3s ease;
+    }
+    .toggle input[type="checkbox"]:checked + .handle {
+      background-color: #5cb85c;
+      left: 100%;
+      transform: translateX(-100%);
+    }
+    .toggle .handle:before {
+      position: absolute;
+      content: "";
+      height: 26px; /* Adjust height of the toggle handle */
+      width: 26px; /* Adjust width of the toggle handle */
+      top: 2px;
+      left: 2px;
+      background-color: white;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    .text-right {
+      display: flex;
+      justify-content: flex-end; /* Aligns items to the right */
+      align-items: center; /* Aligns items vertically */
+    }
+    .toggle input[type="checkbox"]:checked + .handle:before {
+      transform: translateX(30px); /* Adjust position for larger toggle */
+    }
